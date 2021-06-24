@@ -1,4 +1,4 @@
-cloud_user@linuxraja-kubemaster:~/code/wordpress$ kubectl get storageclass
+cloud_user@linuxraja-kubemaster:~/code/wordpress$ kubectl get storageclass \
 NAME             PROVISIONER                    RECLAIMPOLICY   VOLUMEBINDINGMODE   ALLOWVOLUMEEXPANSION   AGE
 wordpress-disk   kubernetes.io/no-provisioner   Delete          Immediate           true                   7h43m
 
