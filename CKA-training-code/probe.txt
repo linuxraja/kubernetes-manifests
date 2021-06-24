@@ -1,0 +1,27 @@
+
+
+
+Container Health - Kubernetes provides a number of features that allow you to buils robust solutions such as ability to automatically restart unhealthy containers. K8s need to know the status of your applications - actively monitoring container health.
+
+Liveness Probes - allow you to automatically determine whether or not a container application is in healthy state.
+
+By default K8s will only consider a container to be down if the container process stops.
+
+Liveness Probes allow you to customize this detection mechanism and make it more sophisticated.
+
+Startup Probes - similar to liveness probes. Liveness probes run constanly on a schedule, startup probes run at container statup and stop running once they succeed.
+
+They are used to determine when the application has sucessfully started up. Usefull for legacy applications that can have long startup times.
+
+Readiness Probes - Used to determine when a container is ready to accept requests. When you have a service backed by multiple endpoints, user traffix will not sent to a particulat pod untill containers have all passed the rediness checks defined by thie rediness probes.
+
+Use rediness probes to prevent user traffic from being sent to pods that are still in the process of starting up.
+
+
+
+
+
+
+
+
+
