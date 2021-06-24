@@ -3,6 +3,7 @@
 1) Install the Web UI Dashboard using the recommended yaml file provided by Kubernetes:
 
 ``` kubectl apply -f https://raw.githubusercontent.com/linuxraja/kubernetes-manifests/main/kdashboard/recommended.yaml```
+
     Source :  https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-beta4/aio/deploy/recommended.yaml
     This Create two services dashboard-metrics-scraper & kubernetes-dashboard```
         
